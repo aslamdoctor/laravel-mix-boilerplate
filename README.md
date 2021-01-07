@@ -21,3 +21,14 @@
 `npx mix` - To build all files in development mode
 
 `npx mix --production` - To build all files in production mode
+
+## What's included
+
+1. Bootstrap
+2. jQuery
+3. PostCSS Autoprefixer
+4. SASS files
+
+## Notes
+
+1. Make sure you create "img" and "fonts" folders in project root so they can be shared with both "src" and "dist"
