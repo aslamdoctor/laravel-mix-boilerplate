@@ -32,3 +32,7 @@
 ## Notes
 
 1. Make sure you create "img" and "fonts" folders in project root so they can be shared with both "src" and "dist"
+
+## Todo
+
+- [ ] Add PurgeCSS for Production mode
