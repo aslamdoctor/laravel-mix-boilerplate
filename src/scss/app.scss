@@ -1,4 +1,23 @@
+/*
+ * Libraries
+ */
 @import '~bootstrap/scss/bootstrap';
 @import '~slick-carousel/slick/slick';
-body {
-}
+@import './lib/hamburgers/hamburgers';
+
+/*
+ * Configurations 
+ */
+@import './fonts';
+@import './variables';
+@import './media_queries';
+@import './mixins';
+@import './helpers';
+@import './global';
+@import './typography';
+
+/*
+ * Partials
+ */
+@import './partials/header';
+@import './partials/footer';

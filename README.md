@@ -27,8 +27,9 @@
 1. Bootstrap
 2. jQuery
 3. Slick Carousel
-4. PostCSS Autoprefixer
-5. SASS files
+4. Hamburger CSS
+5. PostCSS Autoprefixer
+6. SASS files
 
 ## Notes
 

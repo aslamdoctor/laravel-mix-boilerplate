@@ -15,37 +15,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
+ // On Dom Ready
 
-setTimeout(function () {
-  $('h1').text('Text Changed using jQuery');
-}, 5000); // Slider
+$(function () {
+  // toggle hamburget menu
+  $('.menu-open').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('is-active');
+  });
+}); // After page loaded completely
 
-$('.slider').slick({
-  autoplay: true,
-  autoplaySpeed: 3000,
-  dots: false,
-  arrows: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  adaptiveHeight: true,
-  prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-  nextArrow: '<button type="button" class="slick-next">Next</button>',
-  responsive: [{
-    breakpoint: 769,
-    settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3
-    }
-  }, {
-    breakpoint: 579,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  }]
-});
+$(window).on('load', function () {});
 
 /***/ }),
 
