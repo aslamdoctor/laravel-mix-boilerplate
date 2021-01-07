@@ -10,13 +10,13 @@
 
 ## Steps to use this repo in your project
 
-`git clone THIS_REPO`
+`git clone git@github.com:aslamdoctor/laravel-mix-boilerplate.git`
 
 `npm install`
 
 ## Use below Commands to Compile files
 
-`npx mix watch` - To watch all file changes
+`npx mix watch` - To watch all files changes
 
 `npx mix` - To build all files in development mode
 
