@@ -10,7 +10,7 @@
 
 ## Steps to use this repo in your project
 
-`git clone git@github.com:aslamdoctor/laravel-mix-boilerplate.git`
+`git clone THIS_REPO`
 
 `npm install`
 
