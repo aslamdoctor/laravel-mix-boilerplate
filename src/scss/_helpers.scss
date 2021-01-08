@@ -40,6 +40,47 @@
 	@include reset_ul_block;
 }
 
+.the-carousel {
+	display: none;
+	position: relative;
+	.the-slide {
+		position: relative;
+	}
+
+	.slick-arrow {
+		@include vertical-align;
+		z-index: 2;
+		cursor: pointer;
+		&.slick-prev {
+			left: 0px;
+		}
+		&.slick-next {
+			left: auto;
+			right: 0px;
+		}
+	}
+
+	ul.slick-dots {
+		@include reset_ul;
+		@include flex-center;
+		li {
+			button {
+				cursor: pointer;
+			}
+
+			&.slick-active {
+				button {
+					color: red;
+				}
+			}
+		}
+	}
+
+	&.slick-initialized {
+		display: block;
+	}
+}
+
 //==== Custom Helpers ===//
 .the-button {
 	@include reset_button;

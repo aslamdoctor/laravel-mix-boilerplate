@@ -12471,6 +12471,56 @@ Usage:
   list-style: none;
 }
 
+.the-carousel {
+  display: none;
+  position: relative;
+}
+.the-carousel .the-slide {
+  position: relative;
+}
+.the-carousel .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+.the-carousel .slick-arrow.slick-prev {
+  left: 0px;
+}
+.the-carousel .slick-arrow.slick-next {
+  left: auto;
+  right: 0px;
+}
+.the-carousel ul.slick-dots {
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.the-carousel ul.slick-dots li {
+  list-style: none;
+}
+.the-carousel ul.slick-dots li button {
+  cursor: pointer;
+}
+.the-carousel ul.slick-dots li.slick-active button {
+  color: red;
+}
+.the-carousel.slick-initialized {
+  display: block;
+}
+
 .the-button {
   padding: 0px;
   border: none;
@@ -12495,6 +12545,49 @@ Usage:
   color: #fff !important;
 }
 
+input,
+button,
+select,
+textarea,
+.form-control {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: normal;
+}
+
+button,
+input[type=submit] {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.form-control {
+  border-radius: 0px;
+  background-clip: padding-box;
+  height: 40px;
+  border: none;
+  border: 1px solid #ccc;
+}
+.form-control:focus {
+  border-color: #000;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.form-control.wpcf7-not-valid {
+  border-color: red;
+}
+.form-control.wpcf7-not-valid + .wpcf7-not-valid-tip {
+  text-align: left;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
@@ -12516,15 +12609,6 @@ h6,
 .h5,
 .h6 {
   font-family: "Times New Roman", Times, serif;
-}
-
-input,
-button,
-select,
-textarea,
-.form-control {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: normal;
 }
 
 *:focus,
@@ -12565,53 +12649,12 @@ strong {
   line-height: inherit;
 }
 
-button,
-input[type=submit] {
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.form-control {
-  border-radius: 0px;
-  background-clip: padding-box;
-  height: 40px;
-  border: none;
-  border: 1px solid #ccc;
-}
-.form-control:focus {
-  border-color: #000;
-  outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.form-control.wpcf7-not-valid {
-  border-color: red;
-}
-.form-control.wpcf7-not-valid + .wpcf7-not-valid-tip {
-  text-align: left;
-}
-
-textarea.form-control {
-  height: auto;
-}
-
-.form-group {
-  margin-bottom: 25px;
-}
-
 iframe {
   max-width: 100%;
 }
 
 svg {
   display: inline-block;
-}
-
-.the-carousel {
-  display: none;
-}
-.the-carousel.slick-initialized {
-  display: block;
 }
 
 .typography h1 {
